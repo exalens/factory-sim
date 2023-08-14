@@ -7,13 +7,13 @@ The OPC-UA server simulates the collection process endpoint data from a SCADA sy
 
 # To activate the OPC-UA Simulator ensure all Python requirements are installed, and run:
 
-python3 /factory-sim/simulator/opc-ua/baking/factory.py
+python3 /factory-sim/opc-ua/baking/factory.py
 
 This will execute the OPC-UA server that publishes data from Baking production line pick and place simulation on the IP of the current host (e.g., 0.0.0.0).
 
 # To activate the simulator production process, run: 
 
-python3 /factory-sim/simulator/opc-ua/baking/client.py
+python3 /factory-sim/opc-ua/baking/client.py
 
 A menu will appear to allow you to set the state of the process from idle (False) to active (True), change the process recipe, and inject anomalies into 
 the process. Note that client.py can connect remotely to factory.py OPC-UA server to change the process state, but anomaly injection requires that it is running on the same host.
