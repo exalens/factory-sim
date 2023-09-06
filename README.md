@@ -1,4 +1,4 @@
-# factory-sim
+# Factory Simulator
 # A simple OPC-UA Factory Process simulator for testing Process Endpoint Monitoring
 
 The process simulates a Bakery production line with systems such as an industrial robot with an accurate kinematic representation of its
@@ -7,13 +7,13 @@ The OPC-UA server simulates the collection process endpoint data from a SCADA sy
 
 # To activate the OPC-UA Simulator ensure all Python requirements are installed, and run:
 
-python3 /factory-sim/opc-ua/baking/factory.py
+<code>python3 opc-ua/baking/factory.py</code>
 
 This will execute the OPC-UA server that publishes data from Baking production line pick and place simulation on the IP of the current host (e.g., 0.0.0.0).
 
 # To activate the simulator production process, run: 
 
-python3 /factory-sim/opc-ua/baking/client.py
+<code>python3 opc-ua/baking/client.py</code>
 
 A menu will appear to allow you to set the state of the process from idle (False) to active (True), change the process recipe, and inject anomalies into 
 the process. Note that client.py can connect remotely to factory.py OPC-UA server to change the process state, but anomaly injection requires that it is running on the same host.
