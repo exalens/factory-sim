@@ -8,7 +8,7 @@ import json
 from recipe import Recipe
 
 # OPCUA server address
-SERVER_ENDPOINT = "opc.tcp://localhost:4841/freeopcua/server/"
+SERVER_ENDPOINT = "opc.tcp://0.0.0.0:4840/freeopcua/server/"
 
 # OPCUA object details
 OBJECT_NAME = "MyObject"
