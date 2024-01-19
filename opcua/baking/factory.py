@@ -21,7 +21,7 @@ from recipe import RobotPosition, recipe_data, Recipe, get_enum_by_value
 
 logging.basicConfig(level=logging.WARN)
 # OPCUA server address
-SERVER_ENDPOINT = "opc.tcp://localhost:4841/freeopcua/server/"
+SERVER_ENDPOINT = "opc.tcp://0.0.0.0:4840/freeopcua/server/"
 
 # The minimum log level to be recorded (DEBUG, INFO, WARNING, ERROR, CRITICAL)
 LOGGING_LEVEL = logging.INFO
